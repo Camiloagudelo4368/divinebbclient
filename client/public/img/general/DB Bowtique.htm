@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/aboutus -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/m3whitewatermark.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="./DB Bowtique_files/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./DB Bowtique_files/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="./DB Bowtique_files/bootstrap.min(1).css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./DB Bowtique_files/mdb.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/indexcarousel.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/compiled.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="icon" href="/assets/img/logo/m3whitewatermark.png" type="image/x-icon"> -->
+    <link href="./DB Bowtique_files/css" rel="stylesheet">
+    <title>DB Bowtique</title>
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html, body, .view {
+  height: 100% !important;
+}
+
+#root{
+height: 100%;
+}
+</style><style type="text/css">/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Header Navbar */
+
+#navbarText {
+    /* width: 10rem !important; */
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, .4); */
+    /* margin: 0 !important; */
+    padding: 1rem;
+    /* text-align: left; */
+    padding: .6rem 10% 1.6rem 0 !important;
+}
+
+#placeOrderLink {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive !important;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 23rem;
+    padding: 0rem 2rem 0 2rem;
+    border-radius: 4rem 1rem 1rem 4rem;
+    color:#706D6D;
+}
+
+#placeOrderLink:hover {
+    color: #FFFFFF !important;
+    transition: font-size 200ms linear;
+    font-size: 3.2rem;
+    transition: background-color 600ms linear;
+    background-color: rgba(112, 109, 109, 0.4);
+}
+
+.headerLogo {
+    z-index: 1000;
+    position: absolute;
+    top: 1rem;
+    margin-left: 10%;
+}
+
+.headerLogo img {
+    width: 158px !important;
+    /* height: auto; */
+    border-bottom: .001rem solid #BDBDBD;
+}
+
+.navCa {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 55%;
+    width: 100%;
+    box-shadow: none !important;
+}
+
+header {
+    width: 100%;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbarMain {
+    padding: 2.5rem 0 0rem 0 !important;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, .6);
+    /* box-shadow: none !important; */
+}
+
+.navLink {
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* padding-top: .5rem; */
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* border-right: .1rem solid #BDBDBD; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #716D6D;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navCa .navbar-nav>li>a:hover {
+    color: #1976D2;
+    color: #000000;
+}
+
+.navCa .navbar-nav>li>a:focus, .navCa .navbar-nav>li.active>a {
+    color: #FFC107;
+    color: #8E3472;
+    color: #c1479c;
+    color: #c1479c;
+    /* color: #d34eaa; */
+}
+
+#navbarMain .navbar-nav {
+    width: 100%;
+    text-align: left;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.menuIcon {
+    width: 1.7rem;
+    height: .2rem;
+    background-color: #FFFFFF;
+    background-color: #716D6D;
+    margin: .3rem 0 .3rem 0;
+}
+
+.navCa .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+}
+/* ----------------------------------------------------------------------------- */
+
+/* Media query */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 2.8rem 0rem 2.25rem 0 !important;
+    }
+    #navbarText {
+        padding: 3rem 10% 1.6rem 2rem !important;
+    }
+    .headerLogo {
+        margin-left: 3%;
+    }
+    #placeOrderLink {
+        bottom: 3rem;
+        left: 0;
+    }
+}
+/* ---------------------------------- */</style><style type="text/css">footer.page-footer {
+    background-color: #667490;
+    background-color: #333639;
+    background-color: #716D6D;
+    background-color: #7B7C7B;
+    background-color: #A2A2A2;
+    background-color: #7B7B7B;
+    background-color: #B4ABAD;
+    background-color: #546C85;
+    /* background-color: #708392; */
+}</style><style type="text/css">/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("/assets/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.titleLanguages {
+    color: #f26622;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Stylish', sans-serif;
+}
+
+.footer_style {
+    position: absolute;
+    width: 100%;
+    height: 3.5rem;
+    bottom: 0rem;
+    left: 0;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: #362b2b;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 12px;
+    opacity: .7;
+    background-color: #DEE1E6;
+    margin: 0rem !important;
+    /* margin-top: 14rem !important; */
+    /* overflow: scroll; */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Header Navbar */
+
+#navbarText {
+    /* width: 10rem !important; */
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, .4); */
+    /* margin: 0 !important; */
+    padding: 1rem;
+    /* text-align: left; */
+    padding: .6rem 10% 1.6rem 0 !important;
+}
+
+.headerLogo {
+    z-index: 1000;
+    position: absolute;
+    top: 1rem;
+    margin-left: 10%;
+}
+
+.headerLogo img {
+    width: 158px;
+    border-bottom: .001rem solid #BDBDBD;
+}
+
+.navCa {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 100%;
+    box-shadow: none !important;
+}
+
+.header {
+    width: 100%;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.imgLogo{
+    width: 100%;
+}
+
+.navbarMain {
+    padding: 2.5rem 0 0rem 0 !important;
+    /* background-color: rgba(255, 255, 255, .3); */
+}
+
+nav {
+    background-color: rgba(255, 255, 255, .6);
+    /* box-shadow: none !important; */
+}
+
+.navLink {
+    font-size: .9rem;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* padding-top: .5rem; */
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* border-right: .1rem solid #BDBDBD; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #FFFFFF;
+    color: #363636;
+    color: #323639;
+    /* color: #494949; */
+    /* color: #FFFFFF; */
+    /* color: #474249; */
+    color: #0E0D0B;
+    color: #716D6D;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navCa .navbar-nav>li>a:hover {
+    color: #1976D2;
+    color: #000000;
+}
+
+.navCa .navbar-nav>li>a:focus, .navCa .navbar-nav>li.active>a {
+    color: #FFC107;
+    color: #8E3472;
+    color: #c1479c;
+    color: #c1479c;
+    /* color: #d34eaa; */
+}
+
+#navbarMain .navbar-nav {
+    width: 100%;
+    text-align: left;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.menuIcon {
+    width: 1.7rem;
+    height: .2rem;
+    background-color: #FFFFFF;
+    background-color: #716D6D;
+    margin: .3rem 0 .3rem 0;
+}
+
+.navCa .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+}
+
+.btnHamburger {
+    width: 100%;
+    text-align: center;
+}
+
+#headerBrand {
+    /* font-family: 'LeagueSpartan'; */
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    font-family: 'Russo One', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Permanent Marker', cursive;
+}
+
+.headerTransform {
+    transition: background-color 1000ms linear;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
+    /* -webkit-transition: padding 500ms linear;
+    -moz-transition: padding 500ms linear;
+    -o-transition: padding 500ms linear;
+    -ms-transition: padding 500ms linear;
+    transition: padding 500ms linear; */
+}
+
+.header_content {
+    margin-bottom: 20px;
+    margin-top: 3rem;
+    font-family: 'LeagueSpartan';
+    font-family: 'Lobster', cursive;
+    font-size: 2.8rem;
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Permanent Marker', cursive;
+}
+
+.startSubText {
+    font-size: 1.1rem;
+    /* font-family: 'Lobster';     */
+    /* font-family: 'Russo One', sans-serif;  */
+    font-family: 'Arvo', serif;
+    /* font-family: 'Permanent Marker', cursive; */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* start/Home */
+
+#start_image {
+    width: 22rem;
+    height: auto;
+    border: 0rem solid gray;
+}
+
+.arrowImg {
+    width: 8%;
+    height: auto;
+    opacity: 1;
+    /* margin:20px 0; */
+}
+
+.arrowImg:hover {
+    cursor: pointer;
+}
+
+.arrowContainer {
+    min-width: 100% !important;
+    text-align: center;
+    align-items: baseline;
+    position: absolute;
+    top: 40rem;
+    top: 80%;
+    z-index: 10;
+    opacity: .1;
+}
+
+.bg_image {
+    position: relative;
+    top: 13rem;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh;
+}
+
+.start {
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions {
+    margin: 0 auto;
+    /* position: fixed; */
+    top: 1rem;
+    width: 100;
+    /* height: 100%; */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* About me */
+
+#about {
+    max-width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid #FFFFFF; */
+    padding-top: 8rem
+}
+
+#about_image {
+    /* float: left; */
+    margin: 0 4rem 0 0;
+    width: 100%;
+    height: auto;
+    border-radius: .4rem;
+    padding-right: 2.5rem
+}
+
+.sumaryHeader {
+    font-size: 2rem;
+    color: #262F72;
+    font-family: 'Fugaz One', cursive;
+}
+
+.sumary {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    width: 90%;
+    line-height: 1.8;
+    color: #212121;
+    color: #757575;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rowBtn {
+    margin: 3rem 0 0 0;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Skills */
+
+.skillsHeader {
+    font-size: 2rem;
+    color: #262F72;
+    font-family: 'Fugaz One', cursive;
+}
+
+#skills {
+    width: 75%;
+    height: 100%;
+    padding: 10% 0 0 0;
+    margin: 0 auto;
+}
+
+.skills {
+    /* background-color: #F2F2F2; */
+    padding: 10% 0 0 0;
+    margin-top: .7rem;
+}
+
+.skillsContainer {
+    padding: 5% 0 10% 0;
+}
+
+.imgSkills {
+    width: 80%;
+    height: auto;
+}
+
+.imgLanguage {
+    width: 6rem;
+    height: 6rem;
+    margin: 20px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Portfolio */
+
+#portfolio {
+    margin: 0;
+    padding: 10% 0 0 0;
+    /* padding: 120px 20px 0px 20px; */
+    height: 100vh;
+}
+
+.card-header {
+    color: #757575 !important;
+    color: #BBDEFB !important;
+    color: #FFC107 !important;
+    background: #BBDEFB !important;
+    background: #757575 !important;
+    background-color: rgba(52, 44, 25, .7) !important;
+    background-color: rgba(121, 127, 131, .7) !important;
+    background-color: rgba(231, 233, 237, .7) !important;
+    /* background: #797F83 !important;     */
+    font-size: .8rem;
+    /* padding-top: .5rem; */
+    font-family: 'Russo One', sans-serif;
+    color: #612294 !important;
+    color: #842e69 !important;
+    color: #f011e5 !important;
+    color: #f05bed !important;
+    color: rgb(245, 46, 239) !important;
+    color: #6c5b5b !important;
+}
+
+/* .btn-link */
+
+.btn-link, .btn-link:hover {
+    text-decoration: none !important;
+}
+
+.portfolioHeader {
+    font-size: 32px;
+    font-weight: 600;
+    /* margin-top: 10px */
+}
+
+.portfolioDescription {
+    margin-top: 10px;
+    font-size: 19px;
+    width: 100%;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.portfolioRow {
+    /* margin-top: 1rem; */
+    padding: 1rem;
+}
+
+#linkImg {
+    width: 35px;
+    height: 35px;
+}
+
+.portfolio_image {
+    width: 100%;
+    height: auto;
+    margin: 0px 0;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.cardCustom {
+    background-color: #f8f8f8;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.card-text {
+    font-size: .85rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Contact modal */
+
+#contactModal {
+    opacity: 0.9;
+    background-color: #333a40;
+}
+
+.text_box {
+    width: 100%;
+    margin: 0px 0 20px 0;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Media query */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 2.8rem 0rem 2.25rem 0 !important;
+    }
+    #navbarText {
+        padding: 3rem 10% 1.6rem 2rem !important;
+    }
+    .headerLogo {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #carouselExampleCaptions {
+        margin: 0 auto;
+        /* position: absolute; */
+        top: 10.5rem;
+        width: 46vh;
+        /* margin-bottom: 20rem; */
+    }
+    .carouselImg {
+        /* width: 700rem; */
+        height: 50vh;
+        width: 70vh;
+    }
+    .footer_style {
+        margin-top: 22rem !important;
+    }
+    /* .bg_image {
+        background-image: url(../img/main/slideimage1vertical.JPEG);
+        position: relative;
+        top: 9rem;
+    } */
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-top: 8rem
+    }
+    #about_image {
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+    }
+    .sumaryText {
+        padding-left: 1rem;
+    }
+    .bg_image {
+        background-size: 100vh 100vh;
+    }
+    .arrowImg {
+        width: 10rem;
+        height: auto;
+        opacity: .8;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .footer_style {
+        margin-top: 15.5rem !important;
+    }
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-top: 8rem
+    }
+    #about_image {
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+    }
+    .arrowImg {
+        width: 10rem;
+        height: auto;
+        opacity: .8;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    .footer_style {
+        /* margin-top: 22rem !important; */
+    }
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-top: 8rem
+    }
+    #about_image {
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+    }
+    .arrowImg {
+        width: 10rem;
+        height: auto;
+        opacity: .8;
+    }
+}
+
+/* ---------------------------------- */
+ /* Navigation*/
+
+ 
+ .scrolling-navbar {
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #667490;
+}
+
+/* Necessary for full page carousel*/
+
+html, body, .view {
+    height: 100%;
+}
+
+/* Carousel*/
+
+.carousel, .carousel-item, .carousel-item.active {
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-indicators li{
+    background-color: #c1479c;
+}
+
+.carousel-item:nth-child(1) {
+   background-image: url("/img/carousel/slidemain_1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.carousel-item:nth-child(2) {
+   background-image: url(/static/media/slideimage_1.cb26c2e0.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.carousel-item:nth-child(3) {
+    background-image: url(/static/media/slideimage_2.cdd0d967.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(4) {
+    background-image: url(/static/media/slideimage_3.0afa1595.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(5) {
+    background-image: url(/static/media/slideimage_4.f10579ef.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(6) {
+    background-image: url(/static/media/slideimage_5.bb33d40c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(7) {
+    background-image: url(/static/media/slideimage_6.99886067.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(8) {
+    background-image: url(/static/media/slideimage_7.4c947702.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(9) {
+    background-image: url(/static/media/slideimage_8.9a6a9f28.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(10) {
+    background-image: url(/static/media/slideimage_9.5fb63bca.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item:nth-child(11) {
+    background-image: url(/static/media/slideimage_10.ff92650e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+</style><style type="text/css">
+.dark-primary-color    { background: #1976D2 !important; }
+.dark-primary-text    { color: #1976D2 !important; }
+/* .default-primary-color { background: #2196F3 !important; } */
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB !important; }
+.text-primary-color    { color: #FFFFFF !important; }
+.text-secondary-color    { color: #FFC107 !important; }
+.primary-text-color    { color: #212121 !important; }
+.secondary-text-color  { color: #757575 !important; }
+.divider-color         { border-color: #BDBDBD !important; }
+.text-divider-color         { color: #BDBDBD !important; }
+</style><style type="text/css"></style><style type="text/css">/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("/assets/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.titleLanguages {
+    color: #f26622;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Stylish', sans-serif;
+}
+
+.divContainer {
+   /* background-image: url("/img/general/underconstruction.jpg"); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100vw;
+   height: 100vh;
+}
+
+/* .divContainer{
+    width: 100vh;
+    height: 100vh;
+} */</style><style type="text/css">
+.dark-primary-color    { background: #1976D2 !important; }
+.dark-primary-text    { color: #1976D2 !important; }
+/* .default-primary-color { background: #2196F3 !important; } */
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB !important; }
+.text-primary-color    { color: #FFFFFF !important; }
+.text-secondary-color    { color: #FFC107 !important; }
+.primary-text-color    { color: #212121 !important; }
+.secondary-text-color  { color: #757575 !important; }
+.divider-color         { border-color: #BDBDBD !important; }
+.text-divider-color         { color: #BDBDBD !important; }
+</style><style type="text/css">/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("/assets/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.titleLanguages {
+    color: #f26622;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Stylish', sans-serif;
+}
+
+.aboutContainer {
+    background-image: url("/img/logo/m3.jpg");
+    background-image: url("/img/logo/m3.png");
+    background-image: url("/img/logo/m2whitewatermark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    color: #111111;
+    font-weight: bold;
+}
+
+.aboutContainer p {
+    font-size: 1.8rem;
+    color: #888888;
+    color: #111111;
+}
+
+/* Media query */
+
+@media (max-width: 992px) {
+    .aboutContainer p {
+        font-size: 1.36rem;
+        /* height: ; */
+        /* width: 100vw; */
+        /* height: 100vh; */
+    }
+
+    .aboutContainer {        
+        /* width: 100vw; */
+        height: 100%;
+    }
+}
+
+/* ---------------------------------- */</style><style type="text/css">
+.dark-primary-color    { background: #1976D2 !important; }
+.dark-primary-text    { color: #1976D2 !important; }
+/* .default-primary-color { background: #2196F3 !important; } */
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB !important; }
+.text-primary-color    { color: #FFFFFF !important; }
+.text-secondary-color    { color: #FFC107 !important; }
+.primary-text-color    { color: #212121 !important; }
+.secondary-text-color  { color: #757575 !important; }
+.divider-color         { border-color: #BDBDBD !important; }
+.text-divider-color         { color: #BDBDBD !important; }
+</style><style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style></head>
+  
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div><div><div><header class="header"><div class="navCa"><a class="headerLogo" href="http://localhost:3000/"><img class="imgLogo" srcset="/img/logo/mblackwatermark.png" alt=""></a><nav class="navbar navbar-expand-lg navbarMain"><button class="navbar-toggler w-100 text-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><div class="menuIcon"></div><div class="menuIcon"></div><div class="menuIcon"></div></span></button><div class="collapse navbar-collapse" id="navbarText"><ul class="navbar-nav ml-auto"><li class="nav-item"><a id="startLink" class="nav-link navLink" href="http://localhost:3000/">Home</a></li><li class="nav-item"><a id="aboutLink" class="nav-link navLink" href="http://localhost:3000/aboutus">Why?</a></li><li class="nav-item"><a class="nav-link navLink" href="mailto:divinebloomsbowtique@gmail.com">Contact</a></li></ul></div></nav><div><a id="placeOrderLink" target="_blank" href="https://www.etsy.com/shop/DivineBloomsbowtique">Place your order</a></div></div></header></div><div class="aboutContainer"><div class="container"><div class="row"><div class="col-md-10"><h2 class="text-uppercase mb-4 aboutTitle">About Divine design</h2><p>I am so excited to finally launch Divine Blooms Bowtique.</p><p>I have been a busy body these past couple of weeks working on every little detail of this project that has become very dear to me.</p><p>I love making hair bows for my girl and was always asked to sell them but had not wanted to put my self out there like that for silly reasons. (we all deal with our own insecurities) I finally felt it was time to step out of my comfort zone and do something that I love. Please join me to be part of this  new adventure created by God.</p></div></div></div></div><div><footer class="page-footer text-center text-md-left pt-4"><div class="container-fluid"><div class="row"><div class="col-md-3 offset-md-1"><h5 class="font-weight-bold text-uppercase mb-4">Divine design</h5><p>I love making hair bows for my girl and was always asked to sell them but had not wanted to put my self out there like that for silly reasons. (we all deal with our own insecurities) I finally felt it was time to step out of my comfort zone and do something that I love. Please join me to be part of this  new adventure created by God.</p></div><hr class="clearfix w-100 d-md-none"><div class="col-md-2 offset-md-1"><h5 class="font-weight-bold text-uppercase mb-4">Bows</h5><ul class="list-unstyled"><li><a href="http://localhost:3000/aboutus#!">All Products</a></li><li><a href="http://localhost:3000/aboutus#!">New Collection</a></li></ul></div><hr class="clearfix w-100 d-md-none"><div class="col-md-2"><h5 class="font-weight-bold text-uppercase mb-4">Felt Flowers</h5><ul class="list-unstyled"><li><a href="http://localhost:3000/aboutus#!">All Products</a></li><li><a href="http://localhost:3000/aboutus#!">New Collection</a></li></ul></div><hr class="clearfix w-100 d-md-none"><div class="col-md-2"><h5 class="font-weight-bold text-uppercase mb-4">Hair Clips</h5><ul class="list-unstyled"><li><a href="http://localhost:3000/aboutus#!">All Products</a></li><li><a href="http://localhost:3000/aboutus#!">New Collection</a></li></ul></div></div></div><hr><div class="call-to-action text-center"><h4 class="my-4">Follow Us</h4><ul class="list-unstyled list-inline mb-4"><li><h5 class="my-4">Get our latest news</h5></li><li class="list-inline-item"><a href="https://www.instagram.com/divine_blooms/" class="fab fa-instagram fa-2x" aria-hidden="true"></a></li>&nbsp;<li class="list-inline-item"><a href="https://www.facebook.com/Divine-Blooms-Bowtique-102340111123527/" class="fab fa-facebook fa-2x" aria-hidden="true"></a></li>&nbsp;<li class="list-inline-item"><a href="https://www.etsy.com/shop/DivineBloomsbowtique" class="fab fa-etsy fa-2x" aria-hidden="true"></a></li></ul></div><div class="footer-copyright text-center"><div class="container-fluid py-3">© 2019 Copyright: <a href="https://www.dbbowtique.com/">DBBowtique.com</a></div></div></footer></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="./DB Bowtique_files/06f1971861.js"></script><link rel="stylesheet" href="./DB Bowtique_files/free-v4-shims.min.css" media="all"><link rel="stylesheet" href="./DB Bowtique_files/free.min.css" media="all">
+    <!-- JQuery -->
+    <script type="text/javascript" src="./DB Bowtique_files/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./DB Bowtique_files/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./DB Bowtique_files/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./DB Bowtique_files/mdb.min.js"></script><div class="hiddendiv common"></div>
+
+    <!-- <script src="assets/js/index.js"></script> -->
+  <script src="./DB Bowtique_files/bundle.js"></script><script src="./DB Bowtique_files/1.chunk.js"></script><script src="./DB Bowtique_files/main.chunk.js"></script><script src="./DB Bowtique_files/main.5760512725b9109b4bf7.hot-update.js"></script>
+
+</body></html>

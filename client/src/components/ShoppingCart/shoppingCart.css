@@ -1,0 +1,187 @@
+/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#cartContainer{
+    padding-top: 10rem;
+    height: 100vh !important;
+    /* min-height: 20rem; */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Header Navbar */
+
+#navbarText {
+    /* width: 10rem !important; */
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, .4); */
+    /* margin: 0 !important; */
+    padding: 1rem;
+    /* text-align: left; */
+    padding: .6rem 10% 1.6rem 0 !important;
+}
+
+#placeOrderLink {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive !important;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 23rem;
+    padding: 0rem 2rem 0 2rem;
+    border-radius: 4rem 1rem 1rem 4rem;
+    color:#706D6D;
+}
+
+#placeOrderLink:hover {
+    color: #FFFFFF !important;
+    -webkit-transition: font-size 200ms linear;
+    -moz-transition: font-size 200ms linear;
+    -o-transition: font-size 200ms linear;
+    -ms-transition: font-size 200ms linear;
+    transition: font-size 200ms linear;
+    font-size: 3.2rem;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+    background-color: rgba(112, 109, 109, 0.4);
+}
+
+.headerLogo {
+    z-index: 1000;
+    position: absolute;
+    top: 1rem;
+    margin-left: 10%;
+}
+
+.headerLogo img {
+    width: 158px !important;
+    /* height: auto; */
+    border-bottom: .001rem solid #BDBDBD;
+}
+
+.navCa {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 55%;
+    width: 100%;
+    box-shadow: none !important;
+}
+
+header {
+    width: 100%;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbarMain {
+    padding: 2.5rem 0 0rem 0 !important;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, .6);
+    /* box-shadow: none !important; */
+}
+
+.navLink {
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* padding-top: .5rem; */
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* border-right: .1rem solid #BDBDBD; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #716D6D;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navCa .navbar-nav>li>a:hover {
+    color: #1976D2;
+    color: #000000;
+}
+
+.navCa .navbar-nav>li>a:focus, .navCa .navbar-nav>li.active>a {
+    color: #FFC107;
+    color: #8E3472;
+    color: #c1479c;
+    color: #c1479c;
+    /* color: #d34eaa; */
+}
+
+#navbarMain .navbar-nav {
+    width: 100%;
+    text-align: left;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.menuIcon {
+    width: 1.7rem;
+    height: .2rem;
+    background-color: #FFFFFF;
+    background-color: #716D6D;
+    margin: .3rem 0 .3rem 0;
+}
+
+.navCa .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+}
+/* ----------------------------------------------------------------------------- */
+
+/* Media query */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 2.8rem 0rem 2.25rem 0 !important;
+    }
+    #navbarText {
+        padding: 3rem 10% 1.6rem 2rem !important;
+    }
+    .headerLogo {
+        margin-left: 3%;
+    }
+    #placeOrderLink {
+        bottom: 3rem;
+        left: 0;
+    }
+}
+/* ---------------------------------- */

@@ -1,0 +1,48 @@
+/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("/assets/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.titleLanguages {
+    color: #f26622;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Stylish', sans-serif;
+}
+
+.divContainer {
+   /* background-image: url("/img/general/underconstruction.jpg"); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100vw;
+   height: 100vh;
+}
+
+/* .divContainer{
+    width: 100vh;
+    height: 100vh;
+} */

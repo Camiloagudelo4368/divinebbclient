@@ -1,0 +1,76 @@
+/* Overall page */
+
+.clearfix {
+    overflow: auto;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("/assets/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+    /* color: #333333; */
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.titleLanguages {
+    color: #f26622;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Stylish', sans-serif;
+}
+
+.aboutContainer {
+    background-image: url("/img/logo/m3.jpg");
+    background-image: url("/img/logo/m3.png");
+    background-image: url("/img/logo/m2whitewatermark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    color: #111111;
+    font-weight: bold;
+}
+
+.aboutContainer p {
+    font-size: 1.8rem;
+    color: #888888;
+    color: #111111;
+}
+
+/* Media query */
+
+@media (max-width: 992px) {
+    .aboutContainer p {
+        font-size: 1.36rem;
+        /* height: ; */
+        /* width: 100vw; */
+        /* height: 100vh; */
+    }
+
+    .aboutContainer {        
+        /* width: 100vw; */
+        height: 100%;
+    }
+}
+
+/* ---------------------------------- */
